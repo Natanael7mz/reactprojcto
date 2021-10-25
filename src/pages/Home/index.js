@@ -1,24 +1,32 @@
-import React, { useEffect } from 'react';
-import axios from '../../services/axios';
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import * as actions from '../../store/modules/auth/actions';
 import { CenterHome } from './styled';
 import { Container } from '../../styles/GlobalStyles';
 
 export default function Home() {
-  useEffect(() => {
-    async function getDate() {
-      try {
-        const response = await axios.get('/alunos');
-        console.log(response.data);
-      } catch {
-        console.log('erro');
-      }
-    }
-    getDate();
-  }, []);
+  const dispatch = useDispatch();
+  dispatch(actions.config());
   return (
     <Container>
       <CenterHome>
-        <p>CONTEUDOs</p>
+        <p>CONTEUDO</p>
+        <p>CONTEUDO</p>
+        <p>CONTEUDO</p>
+        <p>CONTEUDO</p>
+        <p>CONTEUDO</p>
+        <p>CONTEUDO</p>
+        <p>CONTEUDO</p>
+        <p>CONTEUDO</p>
+        <p>CONTEUDO</p>
+        <p>CONTEUDO</p>
+        <p>CONTEUDO</p>
+        <p>CONTEUDO</p>
+        <p>CONTEUDO</p>
+        <p>CONTEUDO</p>
+        <p>CONTEUDO</p>
+        <p>CONTEUDO</p>
+        <p>CONTEUDO</p>
       </CenterHome>
     </Container>
   );

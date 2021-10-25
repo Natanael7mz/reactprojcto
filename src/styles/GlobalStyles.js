@@ -36,15 +36,11 @@ export default createGlobalStyle`
 
   }
   html{
-    background: hsla(239, 94%, 14%, 1);
-
-background: linear-gradient(90deg, hsla(239, 94%, 14%, 1) 0%, hsla(190, 68%, 50%, 1) 100%);
-
-background: -moz-linear-gradient(90deg, hsla(239, 94%, 14%, 1) 0%, hsla(190, 68%, 50%, 1) 100%);
-
-background: -webkit-linear-gradient(90deg, hsla(239, 94%, 14%, 1) 0%, hsla(190, 68%, 50%, 1) 100%);
-
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#020344", endColorstr="#28B8D5", GradientType=1 );
+    background: linear-gradient(
+    90deg,
+    hsla(239, 94%, 14%, 1) 0%,
+    hsla(190, 68%, 50%, 1) 100%
+    )
   }
 
 
@@ -58,6 +54,5 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#020344", en
 
 export const Container = styled.section`
   max-width: 1200px;
-  border: 1px solid red;
   margin: auto;
 `;
